@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Web Socket Test</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+
+        jQuery(document).ready(function() {
+        $form = jQuery('#loveForm');
+        $form.bind('submit', function ($event) {
+        $event.preventDefault();
+        jQuery('#error').remove();
+        jQuery('#result').remove();
+        jQuery.ajax({
+        dataType: "json",
+        type: $form.attr('method'),
+        url: $form.attr('action'),
+        data: $form.serialize(),
+        success: function (data) {
+        $form.append('
+        <div valign="center" id="result"><br/>Your Love Factor is '+data["percentage"]+'!<br/>'+data["loveMessage"]+'
+        </div>
+        ');
+        },
+        error: function (data) {
+        $form.append('
+        <div valign="center" id="error"><br/>Something went wrong.</div>
+        ');
+        }
+        });
+        });
+        });
+
+    </script>
+</head>
+<body>
+
+<h1>Calculate your Love Factor!!</h1>
+
+<p>Please enter the name of you and your sweetheart here.</p>
+
+<form id="loveForm" type="POST" action="getLove">
+    <input type="text" name="name1" value="You"/>&nbsp;<input type="text" name="name2" value="Your sweety"/>
+    <input type="submit" value="Start Calculation">
+</form>
+</body>
+</html>

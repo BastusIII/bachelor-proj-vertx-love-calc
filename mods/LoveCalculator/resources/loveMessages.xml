@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<messages>
+    <message minvalue="0" maxvalue="20" message="Do you even lift?"/>
+    <message minvalue="21" maxvalue="50"
+             message="A successful relationship is possible, but you both have to work on it. Do not sit back and think that it will all work out fine, because it might not be working out the way you wanted it to. Spend as much time with each other as possible."/>
+    <message minvalue="51" maxvalue="60"
+             message="You&#8217;ll have to spend a lot of quality time together. You must be aware of the fact that this relationship might not work out at all, no matter how much time you invest in it."/>
+    <message minvalue="61" maxvalue="70" message="You match pretty well. Meh"/>
+    <message minvalue="71" maxvalue="80"
+             message="Dr. Love thinks that a relationship between you has a reasonable chance of working out, but on the other hand, it might not. Your relationship may suffer good and bad times. If things might not be working out as you would like them to, do not hesitate to talk about it with the person involved. Spend time together, talk with each other."/>
+    <message minvalue="81" maxvalue="90"
+             message="Dr. Love thinks that a relationship between you has a very good chance of being successful, but this doesn&#8217;t mean that you don&#8217;t have to work on the relationship. Remember that every relationship needs spending time together, talking with each other etc."/>
+    <message minvalue="91" maxvalue="100" message="You match perfectly. Totally stay together."/>
+    <message minvalue="98" maxvalue="100" message="Amazing &lt;3!"/>
+</messages>

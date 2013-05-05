@@ -1,0 +1,2 @@
+{ "verticle1_conf": { "foo": "wibble" },
+  "verticle2_conf": { "age": 1234, "shoe_size": 12, "pi": 3.14159 } }
