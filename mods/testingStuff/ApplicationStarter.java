@@ -1,3 +1,5 @@
+package testingStuff;
+
 import org.vertx.java.core.json.JsonObject;
 import org.vertx.java.deploy.Verticle;
 
