@@ -1,9 +1,12 @@
+package testingStuff;
+
 import org.vertx.java.core.eventbus.EventBus;
 import org.vertx.java.core.logging.Logger;
+import org.vertx.java.deploy.Verticle;
 
-public class Verticle extends org.vertx.java.deploy.Verticle {
+public class MyVerticle extends Verticle {
     public void start() {
-        // Verticle has access to the vertx and container object
+        // MyVerticle has access to the vertx and container object
         Logger logger = container.getLogger();
         EventBus bus = vertx.eventBus();
     }
